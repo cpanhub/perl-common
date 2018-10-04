@@ -1,0 +1,12 @@
+sudo: required
+
+services:
+  - docker
+
+env: 
+  - PERL=5.24 DOCKERFILE=./Dockerfile      SUFFIX=''
+  - PERL=5.24 DOCKERFILE=./mypg/Dockerfile SUFFIX='-mypg'
+  - PERL=5.26 DOCKERFILE=./Dockerfile      SUFFIX=''      LATEST="latest"
+  - PERL=5.26 DOCKERFILE=./mypg/Dockerfile SUFFIX='-mypg' LATEST="mypg"
+
+script: bash build_and_deploy.sh
