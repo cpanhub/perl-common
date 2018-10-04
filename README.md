@@ -19,7 +19,9 @@ libraries for [PostgreSQL] and [MySQL] which should allow you to spin up
 database runners for each RDBMS respectively using [Test::PostgreSQL] and
 [Test::mysqld].
 
-# Pre-baked CPAN modules
+# Pre-baked
+
+## CPAN modules
 
 Modules that are included in `cpan/perl-common`.
 
@@ -27,12 +29,14 @@ Modules that are included in `cpan/perl-common`.
 * [App::Sqitch](https://p3rl.org/App::Sqitch) Sane database change management
 * [Task::Kensho](https://p3rl.org/Task::Kensho) A Glimpse at an Enlightened Perl
 
-Modules that are included in `cpan/perl-common:latest-mypg` include those above and
-the following:
+## Packages
 
-* [DBD::Pg](https://p3rl.org/DBD::Pg) PostgreSQL database driver for the DBI module
-* [DBD::mysql](https://p3rl.org/DBD::mysql) MySQL driver for the Perl5 Database
-  Interface (DBI)
+Packages that are included in `cpan/perl-common:latest-mypg`.
+
+* default-libmysqlclient-dev
+* libpq-dev
+* mysql-server
+* postgresql-client
 
 # See also
 
